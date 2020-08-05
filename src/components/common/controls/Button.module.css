@@ -1,0 +1,15 @@
+.button {
+    background-color: white;
+    height: fit-content;
+    border: solid #fff 2px;
+    border-radius: 1.2rem;
+    padding: .6rem;
+    transition-duration: .3s;
+    font-size: 1.2rem;
+}
+.button:focus {
+    outline: none;
+    border: solid #108c56 2px;
+}.button:hover {
+    opacity: .8;
+ }

@@ -1,0 +1,21 @@
+.wrapper {
+    background: transparent;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "." "f" ".";
+
+}
+
+.fields {
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 80vw;
+    grid-area: f;
+    display: grid;
+    grid-gap: .6rem;
+}

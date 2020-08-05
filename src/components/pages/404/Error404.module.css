@@ -1,0 +1,22 @@
+.wrapper {
+    background-color: transparent;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "." "f" ".";
+}
+
+.error {
+    margin: 0 auto;
+    grid-area: f;
+    color: white;
+    font-size: 2rem;
+}
+
+.link {
+    color: white
+}

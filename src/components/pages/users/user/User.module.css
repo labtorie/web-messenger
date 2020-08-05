@@ -1,0 +1,78 @@
+.wrapper {
+    overflow: hidden;
+    height: available;
+    margin: 0 auto;
+    display: grid;
+    padding: 10px;
+    width: max-content;
+}
+
+@media (min-width: 600px)  {
+    .wrapper {
+        grid-template-columns: 20vw max-content;
+        grid-template-rows: 10vw min-content;
+        grid-template-areas: "pp nb" "pp ctrls";
+    }
+    .imageArea {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        grid-template-rows: 50vw min-content max-content;
+        grid-template-areas: "pp" "nb" "ctrls";
+    }
+    .imageArea {
+        width: 50vw;
+        height: 50vw;
+    }
+
+}
+
+.texts {
+    grid-area: nb;
+
+}
+
+.imageArea {
+    background-color: white;
+    margin: 0 auto;
+    grid-area: pp;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageArea img {
+    height: 100%;
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name {
+    text-align: center;
+}
+
+.bio {
+    padding: 0 10vw;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 70vw;
+    word-break: break-word;
+}
+
+.controls {
+    grid-area: ctrls;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-gap: 2vw;
+    padding: 10vh 10vw;
+    height: min-content;
+    width: max-content;
+    margin: 0 auto;
+}

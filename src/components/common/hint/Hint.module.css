@@ -1,0 +1,13 @@
+.hint {
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

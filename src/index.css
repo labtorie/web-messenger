@@ -1,0 +1,68 @@
+html {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+div {
+  border: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+
+  font-size: smaller;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(270deg, #243a66, #106a8c, #108c56);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite;
+}
+
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}

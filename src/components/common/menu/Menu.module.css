@@ -1,0 +1,20 @@
+.wrapper {
+    background-color: rgba(255,255,255,0.9);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    color: #4b4b4b;
+    font-size: 2rem;
+}
+.selected {
+    color: #106a8c;
+}
