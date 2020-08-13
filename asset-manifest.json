@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/web-messenger/static/css/main.01d51a94.chunk.css",
-    "main.js": "/web-messenger/static/js/main.bfefd461.chunk.js",
-    "main.js.map": "/web-messenger/static/js/main.bfefd461.chunk.js.map",
+    "main.js": "/web-messenger/static/js/main.52658314.chunk.js",
+    "main.js.map": "/web-messenger/static/js/main.52658314.chunk.js.map",
     "runtime-main.js": "/web-messenger/static/js/runtime-main.fdaabad2.js",
     "runtime-main.js.map": "/web-messenger/static/js/runtime-main.fdaabad2.js.map",
     "static/css/2.db08e757.chunk.css": "/web-messenger/static/css/2.db08e757.chunk.css",
     "static/js/2.1a6feed7.chunk.js": "/web-messenger/static/js/2.1a6feed7.chunk.js",
     "static/js/2.1a6feed7.chunk.js.map": "/web-messenger/static/js/2.1a6feed7.chunk.js.map",
     "index.html": "/web-messenger/index.html",
-    "precache-manifest.5b331efcd7678cd485a96c6939790a08.js": "/web-messenger/precache-manifest.5b331efcd7678cd485a96c6939790a08.js",
+    "precache-manifest.8c8548f2473d1717bd632c8c8addc788.js": "/web-messenger/precache-manifest.8c8548f2473d1717bd632c8c8addc788.js",
     "service-worker.js": "/web-messenger/service-worker.js",
     "static/css/2.db08e757.chunk.css.map": "/web-messenger/static/css/2.db08e757.chunk.css.map",
     "static/css/main.01d51a94.chunk.css.map": "/web-messenger/static/css/main.01d51a94.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.db08e757.chunk.css",
     "static/js/2.1a6feed7.chunk.js",
     "static/css/main.01d51a94.chunk.css",
-    "static/js/main.bfefd461.chunk.js"
+    "static/js/main.52658314.chunk.js"
   ]
 }
