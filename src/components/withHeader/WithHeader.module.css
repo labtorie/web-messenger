@@ -1,0 +1,15 @@
+.grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: max-content 1fr ;
+    grid-template-areas: "header" "content";
+}
+.header {
+    grid-area: header;
+    height: 100%;
+}
+.body {
+    grid-area: content;
+    height: border-box;
+}

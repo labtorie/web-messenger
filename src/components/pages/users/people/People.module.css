@@ -1,25 +1,29 @@
 .wrapper {
     background-color: transparent;
-    height: 60vh;
+    height: 100%;
+    width: 100%;
 }
 .searchArea {
-    display: grid;
-    width: fit-content;
-    grid-gap: 1rem;
+    width: available;
     margin: 0 auto;
-    grid-template-columns: 1fr fit-content(2rem);
-    padding: 1rem;
+    padding: 1rem 1.5rem;
 }
 .link {
     text-decoration: none;
     color:black;
 }
 .itemWrapper {
+    width: available;
     background-color: white;
     display: grid;
-    grid-template-columns: 70px 1fr 30px;
-    padding: 1rem;
+    grid-template-columns: 70px 1fr 2rem;
+    padding: 1rem 1.5rem;
     margin-bottom: 1px;
+    overflow-x: hidden;
+}
+
+.imageArea {
+    height: 70px;
 }
 
 .imageArea img {
@@ -27,8 +31,9 @@
     object-fit: cover; /* Do not scale the image */
     object-position: center; /* Center the image within the element */
     width: 70px;
-    border-radius: 35px;
+    border-radius: 50%;
 }
+
 .name {
     display: flex;
     padding-left: 1rem;
@@ -37,26 +42,30 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
 }
+
 .saved {
     display: flex;
-    padding-left: 1rem;
     align-items: center;
+    margin-left: 1rem;
     color: #106a8c;
 }
 
+
+
 @media (max-width: 750px) {
     .itemsGrid {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (min-width: 750px) {
     .itemsGrid {
+        width: 100%;
         display: grid;
         grid-gap: 2px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }

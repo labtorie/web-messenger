@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react'
-import styles from './Users.module.css'
+import styles from './People.module.css'
 import Input from "../../../common/controls/Input";
 import Button from "../../../common/controls/Button";
-import user from '../../../../assets/images/user.png'
 import {usersAPI} from "../../../../API/API";
 import Loading from "../../../common/screens/Loading";
 import {NavLink} from "react-router-dom";
-import Login from "../../login/Login";
 import Hint from "../../../common/hint/Hint";
+import NoPicture from "../../../../assets/images/NoPicture";
+import WithHeader from "../../../withHeader/WithHeader";
 
 const Item = (props) => {
 
@@ -15,7 +15,14 @@ const Item = (props) => {
         <NavLink className={styles.link} to={`/user/${props.id}`}>
             <div className={styles.itemWrapper}>
                 <div className={styles.imageArea}>
-                    <img src={props.image || user} alt={'Profile'}/>
+                    <div className={styles.imageArea}>
+                        {props.image
+                            ?
+                            <img src={props.image} alt={'Profile'}/>
+                            :
+                            <NoPicture id={props.id} name={props.name}/>
+                        }
+                    </div>
                 </div>
                 <div className={styles.name}>{props.name}</div>
                 <div className={styles.saved}>{props.saved && <i className={'fas fa-star'}/>}</div>
@@ -24,7 +31,7 @@ const Item = (props) => {
     )
 }
 
-const Users = () => {
+const People = () => {
 
     let [users, setUsers] = useState(null)
     let [isLoading, setLoading] = useState(true)
@@ -32,8 +39,8 @@ const Users = () => {
     let [currentPage, setCurrentPage] = useState(1)
     let [isButtonActive, toggleButton] = useState(true)
     let [searchString, setSearchString] = useState('')
+    let [timer, setTimer] = useState(0)
 
-    useEffect(() => fetchUsers(), [])
 
     const fetchUsers = () => {
         setLoading(true)
@@ -41,7 +48,6 @@ const Users = () => {
             (r) => {
                 setUsers(r)
                 setLoading(false)
-                console.log(searchString)
             }
         )
     }
@@ -64,11 +70,6 @@ const Users = () => {
         setCurrentPage(currentPage + 1)
     }
 
-    const onSearchClick=()=>{
-        fetchUsers()
-        submitSearching(true)
-    }
-
     let UsersComponents = users && [...users.items].map(
         (item) => <Item key={item.id} name={item.name} id={item.id} image={item.photos.small} saved={item.followed}/>
     )
@@ -77,19 +78,31 @@ const Users = () => {
         submitSearching(false)
         setSearchString(e.target.value)
     }
+    useEffect(
+        () => {
+            submitSearching(false)
+            clearTimeout(timer)
+            setTimer(setTimeout(() => {
+                fetchUsers();
+                submitSearching(true)
+            }, 1000))
+        }, [searchString]
+    )
+
     return (
+        <WithHeader headerTitle={'People'}>
         <div className={styles.wrapper}>
             <div className={styles.searchArea}>
-                <Input onChange={onSearchInputChange}/>
-                <Button onClick={onSearchClick} label={<i className="fas fa-search"/>}/>
+                <Input onChange={onSearchInputChange} value={searchString} placeholder={'Search people...'}/>
             </div>
             {isLoading
                 ?
                 <Loading/>
                 : (users.totalCount === 0)
                     ?
-                    <Hint hint={searchString === '' ? triedToSearch && `Your Bookmarks will be here` : triedToSearch && `No users found`}
-                          icon={searchString === '' ? triedToSearch && 'fas fa-user-friends' : triedToSearch && 'fas fa-search'}/>
+                    <Hint
+                        hint={searchString === '' ? triedToSearch && `Your Bookmarks will be here` : triedToSearch && `No users found`}
+                        icon={searchString === '' ? triedToSearch && 'fas fa-user-friends' : triedToSearch && 'fas fa-search'}/>
                     :
                     <>
                         <div className={styles.itemsGrid}>
@@ -99,12 +112,15 @@ const Users = () => {
                         <center style={{marginTop: .6 + 'rem', marginBottom: .6 + 'rem'}}>
                             <Button label='Show more'
                                     onClick={showMoreUsers}
-                                    disabled={!isButtonActive}/>
+                                    disabled={!isButtonActive}
+                                    color={'#bbb'}/>
                         </center>}
                     </>
             }
 
         </div>
+
+        </WithHeader>
     )
 }
-export default Users
+export default People

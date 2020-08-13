@@ -1,18 +1,24 @@
 .wrapper {
     overflow: hidden;
-    height: available;
-    margin: 0 auto;
+    height: fit-content;
+    margin: 0;
     display: grid;
-    padding: 10px;
-    width: max-content;
+    width: 100%;
 }
 
-@media (min-width: 600px)  {
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width: 600px) {
     .wrapper {
-        grid-template-columns: 20vw max-content;
+        width: 100%;
+        grid-template-columns: 20vw fit-content(80vw);
         grid-template-rows: 10vw min-content;
         grid-template-areas: "pp nb" "pp ctrls";
     }
+
     .imageArea {
         width: 20vw;
         height: 20vw;
@@ -21,12 +27,14 @@
 
 @media (max-width: 600px) {
     .wrapper {
-        grid-template-rows: 50vw min-content max-content;
+        grid-template-rows: 100vw min-content min-content;
         grid-template-areas: "pp" "nb" "ctrls";
     }
+
     .imageArea {
-        width: 50vw;
-        height: 50vw;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem;
     }
 
 }
@@ -37,20 +45,14 @@
 }
 
 .imageArea {
-    background-color: white;
-    margin: 0 auto;
     grid-area: pp;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.imageArea img {
-    height: 100%;
+.imageArea img,  .noPic {
+    height: calc(100vw - 3rem);
+    width: calc(100vw - 3rem);
     object-fit: cover; /* Do not scale the image */
     object-position: center; /* Center the image within the element */
-    width: 100%;
     border-radius: 50%;
 }
 
@@ -59,11 +61,32 @@
 }
 
 .bio {
-    padding: 0 10vw;
+    padding: 0 1.5rem;
     font-size: 1.2rem;
-    text-align: center;
-    max-width: 70vw;
+    text-align: justify;
+    max-width: calc(100vw - 3rem);
     word-break: break-word;
+}
+
+.title {
+    color: #828282;
+    margin-bottom: .2rem;
+}
+
+.bioFull {
+    line-height: 1.2rem;
+    height: fit-content;
+    text-align: justify;
+}
+
+.bioReg {
+    color: #106a8c;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: justify;
 }
 
 .controls {
@@ -71,8 +94,8 @@
     display: grid;
     grid-template-columns: 1fr max-content;
     grid-gap: 2vw;
-    padding: 10vh 10vw;
     height: min-content;
-    width: max-content;
-    margin: 0 auto;
+    width: calc(100% - 3rem);
+    margin: 2rem 1.5rem;
 }
+

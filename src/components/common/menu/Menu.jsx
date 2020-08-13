@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Menu.module.css'
-import {NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom"
 
 const Item = (props) => {
     return (

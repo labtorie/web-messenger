@@ -1,9 +1,21 @@
+.link {
+    text-decoration: none;
+    color:black;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
 .itemWrapper {
+    background-color: white;
     display: grid;
+    grid-template-columns: 70px 1fr 2rem;
+    padding: 1rem 1.5rem;
     margin-bottom: 1px;
-    grid-template-columns: 70px 1fr 30px;
-    padding:  8px;
-    overflow: hidden;
+}
+
+.imageArea {
     height: 70px;
 }
 
@@ -12,7 +24,7 @@
     object-fit: cover; /* Do not scale the image */
     object-position: center; /* Center the image within the element */
     width: 70px;
-    border-radius: 35px;
+    border-radius: 50%;
 }
 
 .name {
@@ -23,13 +35,13 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .unread {
     display: flex;
-    padding-left: 1rem;
     align-items: center;
+    margin-left: 1rem;
     color: #106a8c;
 }
 

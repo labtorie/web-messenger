@@ -1,0 +1,96 @@
+.wrapper {
+    overflow: hidden;
+    height: fit-content;
+    margin: 0;
+    display: grid;
+    width: 100%;
+}
+@media (max-width: 600px) {
+    .wrapper {
+        grid-template-rows: 100vw min-content min-content;
+        grid-template-areas: "pp" "nb" "ctrls";
+    }
+
+    .imageArea {
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem;
+    }
+
+}
+.imageArea {
+    grid-area: pp;
+   }
+
+.imageArea img,  .noPic, .uploadArea {
+    height: calc(100vw - 3rem);
+    width: calc(100vw - 3rem);
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    border-radius: 50%;
+}
+.controls {
+    grid-area: ctrls;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    height: min-content;
+    width: calc(100% - 3rem);
+    margin: 0 1.5rem;
+}
+.fields {
+    height: fit-content;
+    width: calc(100% - 3rem);
+    margin: 2rem 1.5rem;
+}
+
+.fieldWrapper {
+    height: fit-content;
+    width: 100%;
+}
+
+.inputContainer input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: .6rem;
+    border: solid #ececec 1px;
+    background-color: #ececec;
+    padding: .6rem;
+    margin: .6rem 0;
+    font-size: 1.3rem;
+}
+.inputContainer input:focus {
+    outline: none;
+}
+.fieldTitle {
+    font-size: 1.2rem;
+    color: #828282;
+}
+
+.uploadArea {
+     position: relative;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "." "ub";
+    top: calc(-100% + 3rem);
+    overflow: hidden;
+}
+.uploadBackground {
+    grid-area: ub;
+    background-color: rgba(0,0,0,.4);
+}
+
+.fakeInput {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fakeInput input {
+    width: 0;
+    height: 0;
+}

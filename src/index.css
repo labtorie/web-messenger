@@ -22,7 +22,7 @@ body {
 }
 
 body {
-  background: linear-gradient(270deg, #243a66, #106a8c, #108c56);
+  background: linear-gradient(45deg, #243a66, #106a8c, #108c56);
   background-size: 600% 600%;
 
   -webkit-animation: AnimationName 24s ease infinite;
@@ -65,4 +65,25 @@ body {
   100% {
     background-position: 0% 50%
   }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: whitesmoke;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }

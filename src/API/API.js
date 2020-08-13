@@ -4,7 +4,10 @@ const instance = axios.create({
     baseURL: "https://social-network.samuraijs.com/api/1.0/",
     withCredentials: true,
     headers: {
-        'API-KEY': '7b9235d0-5a62-43ca-915d-98f1326304af'
+        // labtorie
+        // 'API-KEY': '7b9235d0-5a62-43ca-915d-98f1326304af'
+        // poop sock
+        'API-KEY': 'aaf01db3-6045-46f6-9014-316ea841444d'
     }
 })
 
@@ -14,9 +17,9 @@ export const messagesAPI = {
             .get(`/dialogs`)
             .then(r => r.data)
     },
-    fetchMessages(chatID) {
+    fetchMessages(chatID, pageSize, page = 1) {
         return instance
-            .get(`/dialogs/${chatID}/messages`)
+            .get(`/dialogs/${chatID}/messages?count=${pageSize}&page=${page}`)
             .then(r => r.data)
     },
     sendMessage(chatID, text) {
@@ -27,30 +30,69 @@ export const messagesAPI = {
 }
 
 export const usersAPI = {
-    fetchUsers(currentPage = 1, pageSize = 10, searchInput = "", friend= true) {
+    fetchUsers(currentPage = 1, pageSize = 10, searchInput = "", friend = true) {
         return instance
             .get(`users?page=${currentPage}&count=${pageSize}${searchInput !== "" ? `&term=${searchInput}` : ""}${friend ? '&friend=true' : ''}`).then(r => r.data)
 
     },
-    checkFollow(id){
+    checkFollow(id) {
         return id && instance
-            .get(`follow/${id}`).then(r=>r.data)
+            .get(`follow/${id}`).then(r => r.data)
     },
-    follow(id){
+    follow(id) {
         return id && instance
-            .post(`follow/${id}`).then(r=>r.data)
+            .post(`follow/${id}`).then(r => r.data)
     },
-    unfollow(id){
+    unfollow(id) {
         return id && instance
-            .delete(`follow/${id}`).then(r=>r.data)
+            .delete(`follow/${id}`).then(r => r.data)
     },
 }
 
 export const profileAPI = {
-    fetchProfile(id = null, myId = 2) {
-        return instance.get(`profile/${id !==null ? id : myId}`).then(r => r.data)
+    fetchProfile(id = null) {
+        return id && instance.get(`profile/${id}`).then(r => r.data)
     },
     uploadProfilePicture(file) {
-        return instance.put('profile/photo', file, {headers: {'Content-Type': 'multipart/form-data'}})
+        const formData = new FormData();
+        formData.append("image", file);
+        return instance.put('profile/photo', formData, {headers: {'Content-Type': 'multipart/form-data'}})
+    },
+    updateProfileInfo(name, bio) {
+        let payload = {
+            aboutMe: bio,
+            contacts: {
+                facebook: null,
+                github: null,
+                instagram: null,
+                mainLink: null,
+                twitter: null,
+                vk: null,
+                website: null,
+                youtube: null
+            },
+            lookingForAJob: false,
+            lookingForAJobDescription: 'null',
+
+            fullName: name,
+        }
+        return instance.put('profile', payload).then(r => r.data)
+    }
+}
+
+export const authAPI = {
+    fetchAuth() {
+        return instance
+            .get(`auth/me`).then(r => r.data)
+    },
+    logIn(email, password) {
+        return instance
+            .post(`auth/login`, {email, password})
+            .then(r => r.data)
+    },
+    logOut() {
+        return instance
+            .delete(`auth/login`)
+            .then(r => r.data)
     }
 }

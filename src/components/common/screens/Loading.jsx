@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Loading.module.css'
-import spinner from '../../../assets/images/spinner.gif'
+import spinner from '../../../assets/images/spinner.svg'
 
 const Loading = () => {
     return <div className={styles.wrapper}>

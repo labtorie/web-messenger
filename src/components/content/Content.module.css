@@ -1,29 +1,32 @@
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .contentGrid {
         width: 100vw;
         height: 100%;
         display: grid;
-        grid-template-rows: 10% 80% 10%;
-        grid-template-areas: "header" "content" "menu";
+        grid-template-rows:  1fr max-content;
+        grid-template-areas: "content" "menu";
     }
 }
 
 @media (min-width: 600px) {
     .contentGrid {
-        width: 80vw;
-        margin: 0 auto;
+
+        width: 90vw;
+        max-width: 800px;
+        height: calc(100% - 2vh);
+        margin: 1vh auto;
         display: grid;
-        grid-template-rows: 14vh 86vh;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: min-content 1fr;
         grid-template-areas:
-                "menu header"
-                "content content";
+                "menu content";
     }
 }
+
 .content {
     grid-area: content;
-    background-color: rgba(255,255,255,0.9);;
-    overflow-y: scroll;
+    width: 100%;
+    background-color: white;
+    overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     height: 100%;
@@ -33,6 +36,7 @@
     grid-area: header;
 
 }
+
 .menu {
     grid-area: menu;
 }

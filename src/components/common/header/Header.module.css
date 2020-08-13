@@ -1,9 +1,59 @@
+/*for simple header*/
+
 .wrapper {
-    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 .title {
-   padding-left: 2rem;
+   padding-left: 1.5rem;
+    font-size: 1.7rem;
+    text-overflow: ellipsis;
+}
+
+/*for backlinked header*/
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+
+.backWrapper {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.icon {
+    width: fit-content;
+    margin: 0 1.5rem;
+    height: 100%;
+    font-size: 1.7rem;
+    color: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.backTitle {
+    font-size: 1.7rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
 }
