@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.01d51a94.chunk.css",
-    "main.js": "/static/js/main.c1946d8a.chunk.js",
-    "main.js.map": "/static/js/main.c1946d8a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1d0ca5c0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1d0ca5c0.js.map",
-    "static/css/2.ed3cbb2b.chunk.css": "/static/css/2.ed3cbb2b.chunk.css",
-    "static/js/2.1a6feed7.chunk.js": "/static/js/2.1a6feed7.chunk.js",
-    "static/js/2.1a6feed7.chunk.js.map": "/static/js/2.1a6feed7.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.4adc26838a9244ebca6f4c326c1cad35.js": "/precache-manifest.4adc26838a9244ebca6f4c326c1cad35.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.ed3cbb2b.chunk.css.map": "/static/css/2.ed3cbb2b.chunk.css.map",
-    "static/css/main.01d51a94.chunk.css.map": "/static/css/main.01d51a94.chunk.css.map",
-    "static/js/2.1a6feed7.chunk.js.LICENSE.txt": "/static/js/2.1a6feed7.chunk.js.LICENSE.txt",
-    "static/media/all.css": "/static/media/fa-solid-900.ee09ad75.woff",
-    "static/media/spinner.svg": "/static/media/spinner.26f430b2.svg"
+    "main.css": "/web-messenger/static/css/main.01d51a94.chunk.css",
+    "main.js": "/web-messenger/static/js/main.bfefd461.chunk.js",
+    "main.js.map": "/web-messenger/static/js/main.bfefd461.chunk.js.map",
+    "runtime-main.js": "/web-messenger/static/js/runtime-main.fdaabad2.js",
+    "runtime-main.js.map": "/web-messenger/static/js/runtime-main.fdaabad2.js.map",
+    "static/css/2.db08e757.chunk.css": "/web-messenger/static/css/2.db08e757.chunk.css",
+    "static/js/2.1a6feed7.chunk.js": "/web-messenger/static/js/2.1a6feed7.chunk.js",
+    "static/js/2.1a6feed7.chunk.js.map": "/web-messenger/static/js/2.1a6feed7.chunk.js.map",
+    "index.html": "/web-messenger/index.html",
+    "precache-manifest.5b331efcd7678cd485a96c6939790a08.js": "/web-messenger/precache-manifest.5b331efcd7678cd485a96c6939790a08.js",
+    "service-worker.js": "/web-messenger/service-worker.js",
+    "static/css/2.db08e757.chunk.css.map": "/web-messenger/static/css/2.db08e757.chunk.css.map",
+    "static/css/main.01d51a94.chunk.css.map": "/web-messenger/static/css/main.01d51a94.chunk.css.map",
+    "static/js/2.1a6feed7.chunk.js.LICENSE.txt": "/web-messenger/static/js/2.1a6feed7.chunk.js.LICENSE.txt",
+    "static/media/all.css": "/web-messenger/static/media/fa-solid-900.ee09ad75.woff",
+    "static/media/spinner.svg": "/web-messenger/static/media/spinner.26f430b2.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1d0ca5c0.js",
-    "static/css/2.ed3cbb2b.chunk.css",
+    "static/js/runtime-main.fdaabad2.js",
+    "static/css/2.db08e757.chunk.css",
     "static/js/2.1a6feed7.chunk.js",
     "static/css/main.01d51a94.chunk.css",
-    "static/js/main.c1946d8a.chunk.js"
+    "static/js/main.bfefd461.chunk.js"
   ]
 }
