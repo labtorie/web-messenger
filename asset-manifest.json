@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/web-messenger/static/css/main.01d51a94.chunk.css",
-    "main.js": "/web-messenger/static/js/main.52658314.chunk.js",
-    "main.js.map": "/web-messenger/static/js/main.52658314.chunk.js.map",
+    "main.css": "/web-messenger/static/css/main.05b73c59.chunk.css",
+    "main.js": "/web-messenger/static/js/main.0534e9cf.chunk.js",
+    "main.js.map": "/web-messenger/static/js/main.0534e9cf.chunk.js.map",
     "runtime-main.js": "/web-messenger/static/js/runtime-main.fdaabad2.js",
     "runtime-main.js.map": "/web-messenger/static/js/runtime-main.fdaabad2.js.map",
     "static/css/2.db08e757.chunk.css": "/web-messenger/static/css/2.db08e757.chunk.css",
-    "static/js/2.1a6feed7.chunk.js": "/web-messenger/static/js/2.1a6feed7.chunk.js",
-    "static/js/2.1a6feed7.chunk.js.map": "/web-messenger/static/js/2.1a6feed7.chunk.js.map",
+    "static/js/2.74e5795e.chunk.js": "/web-messenger/static/js/2.74e5795e.chunk.js",
+    "static/js/2.74e5795e.chunk.js.map": "/web-messenger/static/js/2.74e5795e.chunk.js.map",
     "index.html": "/web-messenger/index.html",
-    "precache-manifest.8c8548f2473d1717bd632c8c8addc788.js": "/web-messenger/precache-manifest.8c8548f2473d1717bd632c8c8addc788.js",
+    "precache-manifest.eec7dd4baf6a2287bd19f4d686ff178e.js": "/web-messenger/precache-manifest.eec7dd4baf6a2287bd19f4d686ff178e.js",
     "service-worker.js": "/web-messenger/service-worker.js",
     "static/css/2.db08e757.chunk.css.map": "/web-messenger/static/css/2.db08e757.chunk.css.map",
-    "static/css/main.01d51a94.chunk.css.map": "/web-messenger/static/css/main.01d51a94.chunk.css.map",
-    "static/js/2.1a6feed7.chunk.js.LICENSE.txt": "/web-messenger/static/js/2.1a6feed7.chunk.js.LICENSE.txt",
+    "static/css/main.05b73c59.chunk.css.map": "/web-messenger/static/css/main.05b73c59.chunk.css.map",
+    "static/js/2.74e5795e.chunk.js.LICENSE.txt": "/web-messenger/static/js/2.74e5795e.chunk.js.LICENSE.txt",
     "static/media/all.css": "/web-messenger/static/media/fa-solid-900.ee09ad75.woff",
     "static/media/spinner.svg": "/web-messenger/static/media/spinner.26f430b2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.fdaabad2.js",
     "static/css/2.db08e757.chunk.css",
-    "static/js/2.1a6feed7.chunk.js",
-    "static/css/main.01d51a94.chunk.css",
-    "static/js/main.52658314.chunk.js"
+    "static/js/2.74e5795e.chunk.js",
+    "static/css/main.05b73c59.chunk.css",
+    "static/js/main.0534e9cf.chunk.js"
   ]
 }
