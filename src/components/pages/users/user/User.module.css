@@ -11,11 +11,11 @@
     color: inherit;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     .wrapper {
         width: 100%;
-        grid-template-columns: 20vw fit-content(80vw);
-        grid-template-rows: 10vw min-content;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 4fr;
         grid-template-areas: "pp nb" "pp ctrls";
     }
 
@@ -25,7 +25,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .wrapper {
         grid-template-rows: 100vw min-content min-content;
         grid-template-areas: "pp" "nb" "ctrls";
@@ -49,13 +49,24 @@
 }
 
 .imageArea img,  .noPic {
+
     height: calc(100vw - 3rem);
     width: calc(100vw - 3rem);
     object-fit: cover; /* Do not scale the image */
     object-position: center; /* Center the image within the element */
     border-radius: 50%;
 }
+@media (min-width: 768px) {
+    .imageArea img,  .noPic {
 
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover; /* Do not scale the image */
+        object-position: center; /* Center the image within the element */
+        border-radius: 50%;
+    }
+}
 .name {
     text-align: center;
 }

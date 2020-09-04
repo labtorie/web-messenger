@@ -10,7 +10,7 @@ import store from './redux/store'
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={'/web-messenger'}>
             <Provider store={store}>
                 <App/>
             </Provider>

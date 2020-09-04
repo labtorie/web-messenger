@@ -3,12 +3,12 @@
     height: 100%;
     width: 100%;
     display: flex;
+    background-color: white;
     align-items: center;
     justify-content: center;
 }
 
 .spinner {
-    background-color: rgba(0,0,0,.6);
     border-radius: 50%;
     padding: 0;
     width: 3rem;

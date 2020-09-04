@@ -2,6 +2,7 @@
   "name": "web_messager",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://labtorie.github.io/web-messenger/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

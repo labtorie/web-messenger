@@ -14,18 +14,12 @@ const pageSize = 20
 const MessageBubble = (props) => {
     return <div className={styles.messageSpace}>
         <div className={props.mine ? styles.sent : styles.received}>
-            <div className={styles.bubble}>{props.text}</div>
+            {/*  <div className={styles.bubble}>{`${props.text}`}</div>*/}
+            <div className={styles.bubble} dangerouslySetInnerHTML={{__html: props.text}}></div>
         </div>
     </div>
 }
 
-const ch = (props) => {
-    return (<div className={styles.backWrapper}>
-        <div className={styles.icon}><NavLink className={styles.link} to={props.backLink}> <i
-            className='fas fa-chevron-left'/></NavLink></div>
-        <div className={styles.name}><h1 className={styles.backTitle}>{props.title || 'Header'}</h1></div>
-    </div>)
-}
 
 const ChatHeader = (props) => {
     return <div className={styles.header}>
@@ -37,7 +31,7 @@ const ChatHeader = (props) => {
                 ?
                 <img src={props.image} alt={'Profile'}/>
                 :
-                <div className={styles.noPic} ><NoPicture id={props.id} name={props.name}/></div>
+                <div className={styles.noPic}><NoPicture id={props.id} name={props.name}/></div>
             }</NavLink>
         </div>
     </div>
@@ -103,12 +97,18 @@ const Chat = (props) => {
     }
 
     const changeInput = (e) => {
-        setInput(e.target.value.replace('<br />', "\r\n"))
+        setInput(`${e.target.value}`)
     }
 
+    const listenKey = (e) => {
+        if (e.key === 'Enter' && !e.shiftKey && !isSending)  {
+            e.preventDefault()
+            sendMessage()
+        }
+    }
     const sendMessage = () => {
         if (input !== '') {
-
+            setSending(true)
             messagesAPI.sendMessage(id, input).then(
                 r => {
                     setMessages({
@@ -153,6 +153,7 @@ const Chat = (props) => {
                                       minRows={1}
                                       maxRows={5}
                                       onChange={changeInput}
+                                      onKeyPress={listenKey}
                                       value={input}/>
                     <div className={styles.btnArea}>
                         <Button disabled={isSending}
