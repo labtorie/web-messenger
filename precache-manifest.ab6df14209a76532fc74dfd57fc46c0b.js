@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bed119e63a70fd730421d573ccf970b1",
+    "revision": "77bffa6d5a3f39c7c0b452c2baf507eb",
     "url": "/web-messenger/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-messenger/static/css/2.db08e757.chunk.css"
   },
   {
-    "revision": "96f00ede17aa13065d0c",
-    "url": "/web-messenger/static/css/main.097a1883.chunk.css"
+    "revision": "5cffba8dda0f9a89b025",
+    "url": "/web-messenger/static/css/main.c5159c69.chunk.css"
   },
   {
     "revision": "ec0b7146548817fa04c1",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-messenger/static/js/2.6285bfe1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "96f00ede17aa13065d0c",
+    "revision": "5cffba8dda0f9a89b025",
     "url": "/web-messenger/static/js/main.dd0ed6ba.chunk.js"
   },
   {
