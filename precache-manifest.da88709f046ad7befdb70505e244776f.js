@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ca3ae25cefb82b9eed1f2d3e3b9ea5e",
+    "revision": "bed119e63a70fd730421d573ccf970b1",
     "url": "/web-messenger/index.html"
   },
   {
-    "revision": "652e6f8c2a6d09db446f",
+    "revision": "ec0b7146548817fa04c1",
     "url": "/web-messenger/static/css/2.db08e757.chunk.css"
   },
   {
-    "revision": "667441710e9bdf83d925",
-    "url": "/web-messenger/static/css/main.05b73c59.chunk.css"
+    "revision": "96f00ede17aa13065d0c",
+    "url": "/web-messenger/static/css/main.097a1883.chunk.css"
   },
   {
-    "revision": "652e6f8c2a6d09db446f",
-    "url": "/web-messenger/static/js/2.74e5795e.chunk.js"
+    "revision": "ec0b7146548817fa04c1",
+    "url": "/web-messenger/static/js/2.6285bfe1.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/web-messenger/static/js/2.74e5795e.chunk.js.LICENSE.txt"
+    "url": "/web-messenger/static/js/2.6285bfe1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "667441710e9bdf83d925",
-    "url": "/web-messenger/static/js/main.0534e9cf.chunk.js"
+    "revision": "96f00ede17aa13065d0c",
+    "url": "/web-messenger/static/js/main.dd0ed6ba.chunk.js"
   },
   {
     "revision": "b29221fdb96547dfe201",
@@ -88,7 +88,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-messenger/static/media/fa-solid-900.ee09ad75.woff"
   },
   {
-    "revision": "26f430b2ee7697f81b6ed8adb412f510",
-    "url": "/web-messenger/static/media/spinner.26f430b2.svg"
+    "revision": "1177cc584e1c9d75a4abb4aec80e381a",
+    "url": "/web-messenger/static/media/spinner.1177cc58.svg"
   }
 ]);
