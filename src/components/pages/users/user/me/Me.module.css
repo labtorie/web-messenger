@@ -26,6 +26,7 @@
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr 4fr;
         grid-template-areas: "pp nb" "pp ctrls";
+        height: 100vh;
     }
 
     .imageArea {
