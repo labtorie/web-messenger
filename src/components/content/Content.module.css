@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 567px) {
     .contentGrid {
         width: 100vw;
         height: 100%;
@@ -8,7 +8,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     .contentGrid {
 
         width: 90vw;

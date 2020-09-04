@@ -54,14 +54,14 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 567px) {
     .itemsGrid {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     .itemsGrid {
         width: 100%;
         display: grid;

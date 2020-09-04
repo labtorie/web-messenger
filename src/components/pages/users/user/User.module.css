@@ -11,7 +11,7 @@
     color: inherit;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     .wrapper {
         width: 100%;
         grid-template-columns: 1fr 4fr;
@@ -25,7 +25,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 567px) {
     .wrapper {
         grid-template-rows: 100vw min-content min-content;
         grid-template-areas: "pp" "nb" "ctrls";
@@ -56,7 +56,7 @@
     object-position: center; /* Center the image within the element */
     border-radius: 50%;
 }
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     .imageArea img,  .noPic {
 
         height: 100%;

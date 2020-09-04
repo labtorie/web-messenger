@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 567px) {
     .wrapper {
         grid-template-rows: 100vw min-content min-content;
         grid-template-areas: "pp" "nb" "ctrls";
@@ -20,7 +20,7 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     .wrapper {
         width: 100%;
         grid-template-columns: 1fr 4fr;
@@ -92,20 +92,20 @@
     display: grid;
     grid-template-rows: 3fr 1fr;
     grid-template-areas: "." "ub";
-    top: calc(-100% + 3rem);
+    top: calc(-101% + 3rem);
     width: calc(100% - 3rem);
 
     overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     .uploadArea {
         position: relative;
         display: grid;
         grid-template-rows: 3fr 1fr;
         grid-template-areas: "." "ub";
         /*top: calc(-100% + 3rem);*/
-        top: -100%;
+        top: -102%;
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -127,12 +127,16 @@
     justify-content: center;
 }
 
+.fakeInput:hover {
+    color: #dddddd;
+}
+
 .fakeInput input {
     width: 0;
     height: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 568px) {
     .imageArea img, .noPic {
 
         height: 100%;

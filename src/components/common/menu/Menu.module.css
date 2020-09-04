@@ -3,13 +3,13 @@
     display: grid;
     padding: .5rem;
 }
-@media (max-width: 599px){
+@media (max-width: 567px){
     .wrapper {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (min-width: 600px){
+@media (min-width: 568px){
     .wrapper {
         grid-template-rows: min-content min-content min-content;
     }
