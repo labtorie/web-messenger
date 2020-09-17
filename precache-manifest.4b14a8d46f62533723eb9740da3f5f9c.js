@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a9a08421d4333f5b8d7c5877858fe24",
+    "revision": "97cec947ac88cc3980f1444709ec7c7f",
     "url": "/web-messenger/index.html"
   },
   {
-    "revision": "ec0b7146548817fa04c1",
+    "revision": "1f96b30285cca9e12d7a",
     "url": "/web-messenger/static/css/2.db08e757.chunk.css"
   },
   {
-    "revision": "5f6c2b287719e54ce4fc",
+    "revision": "c16a7121d773315a7918",
     "url": "/web-messenger/static/css/main.49db5574.chunk.css"
   },
   {
-    "revision": "ec0b7146548817fa04c1",
-    "url": "/web-messenger/static/js/2.6285bfe1.chunk.js"
+    "revision": "1f96b30285cca9e12d7a",
+    "url": "/web-messenger/static/js/2.54292d02.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/web-messenger/static/js/2.6285bfe1.chunk.js.LICENSE.txt"
+    "url": "/web-messenger/static/js/2.54292d02.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f6c2b287719e54ce4fc",
-    "url": "/web-messenger/static/js/main.dd0ed6ba.chunk.js"
+    "revision": "c16a7121d773315a7918",
+    "url": "/web-messenger/static/js/main.6aa6c243.chunk.js"
   },
   {
     "revision": "b29221fdb96547dfe201",
